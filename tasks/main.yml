@@ -1,0 +1,18 @@
+---
+
+- name: gitea | systemd unit
+  tags:
+    - service
+    - systemd
+  template:
+    src: gitea.service.j2
+    dest: /etc/systemd/system/gitea.service
+  notify: daemon-reload gitea
+
+- name: gitea | service
+  tags:
+    - service
+  service:
+    name: gitea
+    state: started
+    enabled: yes
