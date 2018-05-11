@@ -15,7 +15,7 @@
     - config
   template:
     src: app.ini.j2
-    dest: /etc/gitea/conf.d/app.ini
+    dest: /etc/gitea/conf/app.ini
   notify: restart gitea
 
 - name: gitea | nginx
