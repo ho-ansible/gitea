@@ -1,0 +1,11 @@
+---
+
+gitea_ver: master
+gitea_os: linux
+gitea_arch: amd64
+
+gitea_user: git
+gitea_localport: 3000
+gitea_host: git.example.com
+gitea_listen:
+  - "localhost:80"

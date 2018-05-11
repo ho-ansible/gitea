@@ -1,0 +1,3 @@
+---
+
+gitea_url: "https://dl.gitea.io/gitea/{{ gitea_ver }}/gitea-{{ gitea_ver }}-{{ gitea_os }}-{{ gitea_arch }}"
