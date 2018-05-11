@@ -24,7 +24,7 @@ Group={{ gitea_user }}
 WorkingDirectory=/home/{{ gitea_user }}/gitea
 ExecStart=/usr/bin/gitea web
 Restart=always
-Environment=USER={{ gitea_user }} HOME=/home/{{ gitea_user }}
+Environment=USER={{ gitea_user }} HOME=/home/{{ gitea_user }} GITEA_CUSTOM=/etc/gitea
 # If you want to bind Gitea to a port below 1024 uncomment
 # the two values below
 ###
