@@ -1,5 +1,14 @@
 ---
 
+- name: gitea | binary
+  tags:
+    - package
+  get_url:
+    url: "{{ gitea_url }}"
+    checksum: "{{ gitea_checksum }}"
+    dest: /usr/bin/gitea
+    mode: "0755"
+
 - name: gitea | nginx
   include_role:
     name: nginx
