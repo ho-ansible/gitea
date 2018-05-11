@@ -2,3 +2,30 @@
 # Gitea config
 # {{ ansible_managed }}
 
+RUN_USER = "{{ gitea_user }}"
+RUN_MODE = prod
+
+[server]
+PROTOCOL = unix
+HTTP_ADDR = "{{ gitea_sock }}"
+DOMAIN = "{{ gitea_host }}"
+ROOT_URL = "https://{{ gitea_host }}/"
+STATIC_ROOT_PATH = "/home/{{ gitea_user }}"
+APP_DATA_PATH = "/home/{{ gitea_user }}/data"
+
+[database]
+DB_TYPE = postgres
+HOST = /var/run/pg.sock
+USER = "{{ gitea_db_user }}"
+PASSWD = "{{ gitea_db_pw }}"
+LOG_SQL = false
+
+[repository]
+ROOT = "/home/{{ gitea_user }}/repos"
+DEFAULT_PRIVATE = private
+
+[repository.upload]
+FILE_MAX_SIZE = 10		# MB
+
+[security]
+SECRET_KEY = "{{ gitea_key }}"
