@@ -8,6 +8,7 @@
     checksum: "{{ gitea_checksum }}"
     dest: /usr/bin/gitea
     mode: "0755"
+  notify: restart gitea
 
 - name: gitea | nginx
   include_role:
