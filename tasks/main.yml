@@ -1,5 +1,11 @@
 ---
 
+- name: gitea | nginx
+  include_role:
+    name: nginx
+    tasks_from: site.yml
+  with_items: gitea
+
 - name: gitea | systemd unit
   tags:
     - service

@@ -1,0 +1,14 @@
+## /etc/nginx/sites-available/gitea
+# {{ ansible_managed }}
+
+server {
+{% for listen in gitea_listen %}
+  listen {{ listen }};
+{% endfor %}
+
+  server_name {{ gitea_host }};
+
+  location / {
+    proxy_pass http://localhost:{{ gitea_localport }};
+  }
+}
