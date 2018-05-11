@@ -10,6 +10,14 @@
     mode: "0755"
   notify: restart gitea
 
+- name: gitea | config
+  tags:
+    - config
+  template:
+    src: app.ini.j2
+    dest: /etc/gitea/conf.d/app.ini
+  notify: restart gitea
+
 - name: gitea | nginx
   include_role:
     name: nginx
