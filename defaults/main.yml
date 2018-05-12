@@ -9,3 +9,10 @@ gitea_localport: 3000
 gitea_host: git.example.com
 gitea_listen:
   - "localhost:80"
+
+gitea_protocol: unix
+
+gitea_db_type: postgres
+gitea_db_host: /var/lib/postgresql
+gitea_db_user: gitea
+gitea_db_pw: ""
