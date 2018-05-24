@@ -22,7 +22,7 @@
   include_role:
     name: nginx
     tasks_from: site.yml
-  with_items: gitea
+  loop: [ gitea ]
 
 - name: gitea | systemd unit
   tags:
