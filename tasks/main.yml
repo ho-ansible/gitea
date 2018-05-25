@@ -19,10 +19,11 @@
   notify: restart gitea
 
 - name: gitea | nginx
+  vars:
+    site: gitea
   include_role:
     name: nginx
     tasks_from: site.yml
-  loop: [ gitea ]
 
 - name: gitea | systemd unit
   tags:
