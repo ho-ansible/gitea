@@ -7,9 +7,11 @@ RUN_MODE = prod
 
 [server]
 PROTOCOL = "{{ gitea_protocol }}"
-HTTP_ADDR = "{{ gitea_listen }}"
+HTTP_ADDR = "{{ gitea_localaddr }}"
+HTTP_PORT = "{{ gitea_localport }}"
 DOMAIN = "{{ gitea_host }}"
 ROOT_URL = "https://{{ gitea_host }}/"
+SSH_PORT = "{{ ssh_port }}"
 STATIC_ROOT_PATH = "/home/{{ gitea_user }}"
 APP_DATA_PATH = "/home/{{ gitea_user }}/data"
 
