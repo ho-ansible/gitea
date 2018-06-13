@@ -5,9 +5,12 @@ gitea_os: linux
 gitea_arch: amd64
 
 gitea_user: git
-gitea_protocol: fcgi
-gitea_localaddr: 127.0.0.1
+
+gitea_protocol: unix
+gitea_localaddr: /var/run/gitea.sock
 gitea_localport: 3000
+gitea_proxy: "unix:///var/run/gitea.sock"
+
 gitea_host: git.example.com
 gitea_listen:
   - "localhost:80"
