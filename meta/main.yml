@@ -20,6 +20,7 @@ galaxy_info:
     - issue tracker
 
 dependencies:
+  - role: systemd
   - role: ssh
   - role: nginx
   - role: postgres

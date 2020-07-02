@@ -4,9 +4,3 @@
   service:
     name: gitea
     state: restarted
-
-- name: daemon-reload gitea
-  systemd:
-    service: gitea
-    state: restated
-    daemon-reload: yes

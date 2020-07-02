@@ -2,6 +2,7 @@
 
 gitea_ver: master
 gitea_os: linux
+# TODO: parse ansible_architecture
 gitea_arch: amd64
 
 gitea_user: git
