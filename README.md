@@ -10,6 +10,9 @@ Only tested on Debian stable, for now.
 
 ## Role variables
 
+## Playbooks
++ `main.yml`: apply role
+
 # Dependencies
 + [ho-ansible.systemd](https://github.com/ho-ansible/systemd)
 + [ho-ansible.ssh](https://github.com/ho-ansible/ssh)

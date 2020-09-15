@@ -1,0 +1,11 @@
+#! /usr/bin/env ansible-playbook
+# Configure gitea code repository
+# Replace 'git' with your own inventory group
+---
+- name: gitea | code repository
+  hosts: git
+  roles:
+  - role: gitea
+    tags:
+    - git
+    - gitea
