@@ -14,7 +14,7 @@ gitea_proxy: "unix:///var/run/gitea.sock"
 
 gitea_host: git.example.com
 gitea_listen:
-  - "localhost:80"
+- "localhost:80"
 
 gitea_db_type: postgres
 gitea_db_host: /var/lib/postgresql

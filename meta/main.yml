@@ -8,19 +8,18 @@ galaxy_info:
   min_ansible_version: 1.2
 
   platforms:
-   - name: Debian
-     versions:
-     - stable
-     - 9
+  - name: Debian
+    versions:
+    - 10
 
   galaxy_tags:
-    - git
-    - project management
-    - repository
-    - issue tracker
+  - git
+  - project management
+  - repository
+  - issue tracker
 
 dependencies:
-  - role: systemd
-  - role: ssh
-  - role: nginx
-  - role: postgres
+- role: systemd
+- role: ssh
+- role: nginx
+- role: postgres

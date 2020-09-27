@@ -6,7 +6,7 @@ Installation of this app has been moved to kubernetes,
 so this ansible role is no longer maintained.
 
 ## Requirements
-Only tested on Debian stable, for now.
+Only tested on Debian buster.
 
 ## Role variables
 
@@ -20,7 +20,7 @@ Only tested on Debian stable, for now.
 + [ho-ansible.postgres](https://github.com/ho-ansible/postgres)
 
 ## License
-MIT
++ Ansible role licensed [MIT](LICENSE)
 
 ## Author Information
-Sean Ho, https://github.com/ho-ansible/
++ Ansible role by [Sean Ho](https://github.com/ho-ansible/)
